@@ -1,6 +1,5 @@
-package oop.crud.task_2;
+package oop.tasks.CRUD_TASK;
 
-import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Scanner;
 

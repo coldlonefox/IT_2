@@ -1,7 +1,5 @@
-package oop.crud.task_2;
+package oop.tasks.CRUD_TASK;
 
-import java.lang.reflect.Array;
-import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Product {
