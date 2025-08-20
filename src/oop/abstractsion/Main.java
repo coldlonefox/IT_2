@@ -1,7 +1,9 @@
-package oop.constructor.task1.task2;
+package oop.abstractsion;
 
 public class Main {
     public static void main(String[] args) {
+
+
 
     }
 }

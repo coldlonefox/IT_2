@@ -1,0 +1,75 @@
+package oop.polymorphism.polymarphismPraktik.task_02;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner scannerStringType = new Scanner(System.in);
+        Scanner scannerIntType = new Scanner(System.in);
+
+        Animal [] animals = {
+                new Shark(Shark.nameShark),
+                new Shark(Shark.nameShark),
+                new Shark(Shark.nameShark),
+                new Turtle(Turtle.nameTurtle),
+                new Turtle(Turtle.nameTurtle),
+                new Turtle(Turtle.nameTurtle),
+                new Eagle(Eagle.nameEagle),
+                new Eagle(Eagle.nameEagle),
+                new Eagle(Eagle.nameEagle),
+        };
+
+        for (Animal animal : animals){
+            if (animal.getName().equalsIgnoreCase(Shark.nameShark)){
+                System.out.println("~~~~~Shark~~~~~");
+                System.out.print("Colour: ");
+                animal.setColor(scannerStringType.nextLine());
+                System.out.print("Age: ");
+                animal.setAge(scannerIntType.nextInt());
+                System.out.print("Gender: ");
+                animal.setGender(scannerStringType.nextLine());
+            } else if (animal.getName().equalsIgnoreCase(Turtle.nameTurtle)) {
+                System.out.println("~~~~~Turtle~~~~~");
+                System.out.print("Colour: ");
+                animal.setColor(scannerStringType.nextLine());
+                System.out.print("Age: ");
+                animal.setAge(scannerIntType.nextInt());
+                System.out.print("Gender: ");
+                animal.setGender(scannerStringType.nextLine());
+            }else if (animal.getName().equalsIgnoreCase(Eagle.nameEagle)) {
+                System.out.println("~~~~~Eagle~~~~~");
+                System.out.print("Colour: ");
+                animal.setColor(scannerStringType.nextLine());
+                System.out.print("Age: ");
+                animal.setAge(scannerIntType.nextInt());
+                System.out.print("Gender: ");
+                animal.setGender(scannerStringType.nextLine());
+            }
+
+        }
+        System.out.print("\nSearch by color : ");
+        String color = scannerStringType.nextLine();
+        for (Animal animal : animals){
+            if (animal.getColor().equalsIgnoreCase(color)){
+                System.out.println(animal);
+            }
+        }
+        System.out.print("\nSearch by gender : ");
+        String gender = scannerStringType.nextLine();
+        for (Animal animal : animals) {
+            if (animal.getGender().contains(gender)){
+                System.out.println(animal);
+            }
+        }
+        System.out.print("\nSearch by age : ");
+        int age = scannerIntType.nextInt();
+        for (Animal animal : animals) {
+            if (animal.getAge() == age){
+                System.out.println(animal);
+            }
+        }
+
+
+    }
+}

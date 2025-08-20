@@ -1,4 +1,4 @@
-package oop.crud.task_1;
+package oop.crud;
 
 import java.time.LocalDate;
 

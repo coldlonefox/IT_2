@@ -1,4 +1,4 @@
-package oop.constructor.task1;
+package oop.constructor;
 
 import java.time.LocalDate;
 

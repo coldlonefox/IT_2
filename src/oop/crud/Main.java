@@ -1,6 +1,5 @@
-package oop.crud.task_1;
+package oop.crud;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.Arrays;
 

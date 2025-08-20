@@ -1,4 +1,4 @@
-package oop.constructor.task1.task2.person;
+package oop.constructor.task2.person;
 
 public class Main {
     public static void main(String[] args) {
