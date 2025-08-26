@@ -73,6 +73,12 @@ public class Product {
         }
         Product[] newProduct = new Product[products.length-1];
         for (int i = 0; i < index; i++) {
+            if (products[i] == products[index]){
+                number = 9;
+                continue;
+
+
+            }
             newProduct[i] = products[i];
         }
         products = newProduct;
