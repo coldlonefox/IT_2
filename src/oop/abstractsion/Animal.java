@@ -9,6 +9,8 @@ public abstract class Animal {
     public Animal() {
     }
 
+    public abstract void miss();
+
     public Animal(String name, int age, String color, String breed) {
         this.name = name;
         this.age = age;

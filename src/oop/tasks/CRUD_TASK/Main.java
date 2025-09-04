@@ -47,7 +47,7 @@ public class Main {
         System.out.println(Arrays.toString(product.getProducts()));
 
         System.out.println("\n~~~~~~~~~~~~~GET BY~~~~~~~~~~~");
-        System.out.println("Ишите по ID: ");
+        System.out.print("Ишите по ID: ");
         System.out.print(product.getByIDProduct(scannerInt.nextLong()));
 
         System.out.println("\n~~~~~~~~~~~~~UPDATE - ИЗМЕНИТ~~~~~~~~~~~");
@@ -60,9 +60,12 @@ public class Main {
         System.out.print("Ишите по ID. для замены: ");
         product.updateProductByID(scannerInt.nextLong(),updateProduct);
 
-        System.out.println("~~~~~~~~~~~~~DELETE~~~~~~~~~~~");
-        System.out.print("Удалит продукт: ");
-        product.deleteProductByID(scannerInt.nextLong());
+        while (true){
+            System.out.println("~~~~~~~~~~~~~DELETE~~~~~~~~~~~");
+            System.out.print("Удалит продукт: ");
+            product.deleteProductByID(scannerInt.nextLong());
+        }
+
 
     }
 }

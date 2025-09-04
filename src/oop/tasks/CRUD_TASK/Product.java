@@ -34,6 +34,16 @@ public class Product {
         this.priceProduct = priceProduct;
     }
 
+
+
+    @Override
+    public String toString() {
+        return "~~~~~~~~~~Product~~~~~~~~~~" +'\n' +
+                "id: " + id +'\n' +
+                "nameProduct: " + nameProduct + '\n' +
+                "priceProduct: " + priceProduct  + '\n' ;
+    }
+
     //todo CRUD
     //todo Create
     Product[] products = new Product[10];
@@ -62,7 +72,6 @@ public class Product {
         oldProduct.setNameProduct(newProduct.getNameProduct());
         oldProduct.setPriceProduct(newProduct.getPriceProduct());
     }
-
     public void deleteProductByID (long id){
         int index = -1;
         for (int i = 0; i < products.length; i++) {
@@ -72,24 +81,18 @@ public class Product {
             }
         }
         Product[] newProduct = new Product[products.length-1];
+
+        int number = 0;
         for (int i = 0; i < index; i++) {
-            if (products[i] == products[index]){
-                number = 9;
-                continue;
-
-
+            if ( number  < 9){
+                if (products[i] == products[index]){
+                    number = 9;
+                    continue;
+                }
             }
             newProduct[i] = products[i];
         }
         products = newProduct;
         System.out.println(Arrays.toString(newProduct));
-    }
-
-    @Override
-    public String toString() {
-        return "~~~~~~~~~~Product~~~~~~~~~~" +'\n' +
-                "id: " + id +'\n' +
-                "nameProduct: " + nameProduct + '\n' +
-                "priceProduct: " + priceProduct  + '\n' ;
     }
 }

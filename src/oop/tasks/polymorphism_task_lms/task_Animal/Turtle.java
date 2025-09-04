@@ -14,7 +14,7 @@ public class Turtle extends Animal {
         super(color, age, gender);
     }
 
-    public static void turtle () {
+    public static void swim () {
         System.out.println("Turtle swims in ocean");
     }
 
@@ -25,7 +25,6 @@ public class Turtle extends Animal {
 
     @Override
     public String toString() {
-        turtle();
         return super.toString();
     }
 }

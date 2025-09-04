@@ -29,6 +29,7 @@ public class Main {
                 animal.setAge(scannerIntType.nextInt());
                 System.out.print("Gender: ");
                 animal.setGender(scannerStringType.nextLine());
+                Shark.attack();
             } else if (animal.getName().equalsIgnoreCase(Turtle.nameTurtle)) {
                 System.out.println("~~~~~Turtle~~~~~");
                 System.out.print("Colour: ");
@@ -37,6 +38,7 @@ public class Main {
                 animal.setAge(scannerIntType.nextInt());
                 System.out.print("Gender: ");
                 animal.setGender(scannerStringType.nextLine());
+                Turtle.swim();
             }else if (animal.getName().equalsIgnoreCase(Eagle.nameEagle)) {
                 System.out.println("~~~~~Eagle~~~~~");
                 System.out.print("Colour: ");
@@ -46,8 +48,29 @@ public class Main {
                 System.out.print("Gender: ");
                 animal.setGender(scannerStringType.nextLine());
             }
-
         }
+
+        System.out.println("~~~~~Shark attack~~~~~");
+        Shark.attack();
+        System.out.println("~~~~~Turtle swim~~~~~");
+        Turtle.swim();
+        System.out.println("~~~~~Eagle fly~~~~~");
+        Eagle.fly();
+
+        Animal [] sharks = new Shark[3];
+        Animal [] turtles = new Turtle[3];
+        Animal [] eagles = new Eagle[3];
+        int number = 0;
+        for (Animal animal : animals){
+            if (animal.getName().equals(Shark.nameShark)){
+                sharks[number++] = animal;
+            } else if (animal.getName().equals(Turtle.nameTurtle)) {
+                turtles[number++] = animal;
+            } else if (animal.getName().equals(Eagle.nameEagle)) {
+                eagles[number++] = animal;
+            }
+        }
+
         System.out.print("\nSearch by color : ");
         String color = scannerStringType.nextLine();
         for (Animal animal : animals){
@@ -60,6 +83,7 @@ public class Main {
         for (Animal animal : animals) {
             if (animal.getGender().contains(gender)){
                 System.out.println(animal);
+
             }
         }
         System.out.print("\nSearch by age : ");

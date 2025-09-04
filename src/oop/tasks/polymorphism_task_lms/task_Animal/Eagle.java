@@ -14,7 +14,7 @@ public class Eagle extends Animal {
         super(color, age, gender);
     }
 
-    public static void eagle () {
+    public static void fly () {
         System.out.println("Eagle king of the sky");
     }
 
@@ -25,7 +25,6 @@ public class Eagle extends Animal {
 
     @Override
     public String toString() {
-        eagle();
         return super.toString();
     }
 }
