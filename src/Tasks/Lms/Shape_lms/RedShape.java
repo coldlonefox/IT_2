@@ -1,4 +1,4 @@
-package Tasks.Shape_lms;
+package Tasks.Lms.Shape_lms;
 
 import java.util.Random;
 

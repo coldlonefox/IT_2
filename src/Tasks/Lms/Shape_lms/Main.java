@@ -1,6 +1,4 @@
-package Tasks.Shape_lms;
-
-import java.util.Arrays;
+package Tasks.Lms.Shape_lms;
 
 public class Main {
     public static void main(String[] args) {

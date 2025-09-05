@@ -1,6 +1,4 @@
-package Tasks.Shape_lms;
-
-import java.util.Scanner;
+package Tasks.Lms.Shape_lms;
 
 public class WhiteShape extends Shape{
     @Override

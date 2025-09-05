@@ -1,7 +1,4 @@
-package Tasks.Animal_lms;
-
-import java.util.Arrays;
-import java.util.Scanner;
+package Tasks.Lms.Animal_lms;
 
 public class Main {
     public static void main(String[] args) {

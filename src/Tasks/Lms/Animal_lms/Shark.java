@@ -1,4 +1,4 @@
-package Tasks.Animal_lms;
+package Tasks.Lms.Animal_lms;
 
 public class Shark extends Animal {
     public static final String nameShark = "Shark";

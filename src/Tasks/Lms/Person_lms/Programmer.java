@@ -1,4 +1,4 @@
-package Tasks.Person_lms;
+package Tasks.Lms.Person_lms;
 
 public class Programmer extends Person{
     private String companyName;

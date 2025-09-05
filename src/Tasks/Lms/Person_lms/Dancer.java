@@ -1,4 +1,4 @@
-package Tasks.Person_lms;
+package Tasks.Lms.Person_lms;
 
 public class Dancer extends Person{
     private String groupName;
