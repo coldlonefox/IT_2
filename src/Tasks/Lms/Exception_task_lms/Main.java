@@ -4,10 +4,8 @@ import Tasks.Lms.Exception_task_lms.models.Cylinder.Cylinder;
 import Tasks.Lms.Exception_task_lms.models.Parallelepiped.Parallelepiped;
 import Tasks.Lms.Exception_task_lms.service.Model;
 import Tasks.Lms.Exception_task_lms.service.serviceImpl.ModelImpl;
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-import java.util.NoSuchElementException;
+import java.io.IOError;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -17,7 +15,7 @@ public class Main {
                 Parallelepiped parallelepiped = new Parallelepiped();
                 Cylinder cylinder = new Cylinder();
                 Scanner scanner = new Scanner(System.in);
-                System.out.print(" Параллелепипед 1-номерде .\n Цилиндр 2-номерде .\nНомер бериниз : ");
+                System.out.print("\n Параллелепипед 1-номерде .\n Цилиндр 2-номерде .\nНомер бериниз : ");
                 int number = scanner.nextInt();
                 switch (number) {
                     case 1 -> {
@@ -96,8 +94,8 @@ public class Main {
                         }
                     }default ->  System.out.println(" Сиз берген сан жок! ");
                 }
-            }catch (Exception e){
-                System.out.println("Error : "+e);
+            }catch (InputMismatchException e){
+                System.out.println("Error : Cиз тамга берип жатас! ");
             }
         }
     }
